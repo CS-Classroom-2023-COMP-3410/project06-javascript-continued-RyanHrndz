@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man Fan Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>    
+    <header>
+        <h1>Welcome to the Spider-Man Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Spider-Man</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#test">Spider-Man Test</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="theme-selector">
+        <h2>Choose Your Spider-Verse Theme</h2>
+        <button onclick="setTheme('classic-theme')">Classic</button>
+        <button onclick="setTheme('black-theme')">Symbiote Suit</button>
+        <button onclick="setTheme('miles-theme')">Miles Morales</button>
+        <button onclick="setTheme('iron-spider-theme')">Iron Spider</button>
+    </section>
+
+    <section id="villain-spotlight">
+        <h2>Villain Spotlight</h2>
+        <div id="villain-info">
+            <h3 id="villain-name"></h3>
+            <p id="villain-fact"></p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Spider-Man</h2>
+        <p>Spider-Man is a fictional superhero created by writer Stan Lee and artist Steve Ditko. He first appeared in Amazing Fantasy #15 in 1962. The character's real name is Peter Parker, a teenager who gains spider-like abilities after being bitten by a radioactive spider.</p>
+    </section>
+
+    <section id="movies">
+        <h2>Spider-Man Movies</h2>
+        <ul>
+            <li>Spider-Man (2002)</li>
+            <li>Spider-Man 2 (2004)</li>
+            <li>Spider-Man 3 (2007)</li>
+            <li>The Amazing Spider-Man (2012)</li>
+            <li>The Amazing Spider-Man 2 (2014)</li>
+            <li>Spider-Man: Homecoming (2017)</li>
+            <li>Spider-Man: Far From Home (2019)</li>
+            <li>Spider-Man: No Way Home (2021)</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div id="image-gallery">
+            <img src="SpiderManOne.jpg" alt="Spider-Man in action">
+            <img src="SpiderManTwo.jpg" alt="Spider-Man swinging through the city">
+        </div>
+    </section>
+
+    <section id="test">
+        <h2>Spider-Man Knowledge Test</h2>
+        <div id="quiz-container"></div>
+        <p id="test-result"></p>
+    </section>
+
+    <section id="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+    </section>
+
+    <section id="web-shooter-game">
+        <h2>Web-Shooter Training</h2>
+        <p>Click on the villains before they disappear!</p>
+        <div id="game-area"></div>
+        <p>Score: <span id="score">0</span></p>
+        <button onclick="startGame()">Start Game</button>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you're a fan of Spider-Man and want to get in touch, fill out the form below:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Spider-Man Fan Page. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
